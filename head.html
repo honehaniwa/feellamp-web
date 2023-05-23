@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lamp Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lamp Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+</head>
+
+<body>
+    <div class="lamp-container">
+        <div class="lamp">
+            <img src="./lamp.PNG" id="lampImage">
+            <div class="lamp-light-stack">
+                <div class="lamp-light"></div>
+                <div class="lamp-light"></div>
+                <div class="lamp-light"></div>
+                <div class="lamp-light"></div>
+                <div class="lamp-light"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-container">
+        <input type="range" id="cctSlider" min="2700" max="6500" value="5000" step="5"
+            oninput="changeColorTemperature(this.value)">
+        <label for="cctSlider">Color Temperature: <span id="cctValue">5000</span> K</label>
+    </div>
+    <div class="buttons-container">
+        <button class="btn btn-save-radius-solid btn--shadow" onclick="saveColorTemperature(1)">Save 1<i class="fas fa-angle-right fa-position-right"></i></button>
+        <button class="btn btn-save-radius-solid btn--shadow" onclick="saveColorTemperature(2)">Save 2<i class="fas fa-angle-right fa-position-right"></i></button>
+        <button class="btn btn-save-radius-solid btn--shadow" onclick="saveColorTemperature(3)">Save 3<i class="fas fa-angle-right fa-position-right"></i></button>
+    </div>
+    <div class="buttons-container">
+        <button class="btn btn-load-radius-solid btn--shadow" onclick="loadColorTemperature(1)">Load 1<i class="fas fa-angle-right fa-position-right"></i></button>
+        <button class="btn btn-load-radius-solid btn--shadow" onclick="loadColorTemperature(2)">Load 2<i class="fas fa-angle-right fa-position-right"></i></button>
+        <button class="btn btn-load-radius-solid btn--shadow" onclick="loadColorTemperature(3)">Load 3<i class="fas fa-angle-right fa-position-right"></i></button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
+
+
+</html>
